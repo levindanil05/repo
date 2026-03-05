@@ -138,7 +138,7 @@ void buildNFAFromTree(const RegExNode* treeRoot, NFA* nfa)
             nfa->startState = new NFAState;
         }
         if (nfa->terminalState == nullptr)
-        {//Создать конечное состояние, если оно не задано
+        {//Создать конечное состояние, если оно не задано ----
 
             nfa->terminalState = new NFAState;
         }
