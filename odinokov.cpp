@@ -10,7 +10,7 @@
 
 
 NFAState* Trans::getTarget() const
-{
+{ // Хайзенберг
 	return this->target;
 }
 
