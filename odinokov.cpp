@@ -9,7 +9,7 @@
 
 
 
-NFAState* Trans::getTarget() const // Меня зовут Уолтер Хартвелл Вайт.
+NFAState* Trans::getTarget() const // Меня зовут Уолтер Хартвелл Вайт...
 {
 	return this->target;
 }
