@@ -152,7 +152,7 @@ void buildNFAFromTree(const RegExNode* treeRoot, NFA* nfa)
         subNFA.terminalState->transitions.insert(new EpsTrans(nfa->terminalState)); //добавить эпсилон переход из конца подавтомата в конец нка
     }
     else if (treeRoot->type == RegExNode::ZERO_OR_ONE)
-    {//Иначе если тип узла - кватификатор НОЛЬ ИЛИ ОДНО
+    {//Иначе если тип узла - кватификатор НОЛЬ ИЛИ ОДНО ----
 
         buildNFAFromTree(treeRoot->childNodes.front(), nfa);    //построить подавтомат для доченего узла
         nfa->startState->transitions.insert(new EpsTrans(nfa->terminalState));  //добавить эпсилон переход из начального состояния в конечное
